@@ -1,0 +1,139 @@
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre "Portafolio" y "Blog" */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+nav ul li a.no-link {
+    pointer-events: none; /* Desactiva la funcionalidad de enlace */
+    cursor: default; /* Cambia el cursor a 'default' */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+main {
+    flex: 1;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.content img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: linear-gradient(90deg, #ff00cc, #3333ff, #ff33ff, #ff00cc, #3333ff, #ff33ff);
+    background-size: 600% 600%;
+    animation: rainbow 15s ease infinite;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+footer p strong {
+    font-size: 18px;
+    color: #fff;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1{
+    color: aliceblue;
+    align-content: center;
+    background-color: red;
+}
+
+.b{
+    color: aliceblue;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: navy;
+}
+

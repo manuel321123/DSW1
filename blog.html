@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Estadística</title>
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="stylesheet" href="body.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li class="left"><a href="index.html">Inicio</a></li>
+            <div class="right">
+                <li class="dropdown">
+                    <a href="#" class="no-link">Portafolio</a>
+                    <div class="dropdown-content">
+                      <a href="https://drive.google.com/drive/folders/1fz8ny63CtEhL4_MuFiY0q-ud3YycJQ_A?usp=sharing">Parcial 1</a>
+                      <a href="#">Parcial 2</a>
+                      <a href="#">Parcial 3</a>
+                  </div>
+                </li>
+                <li>
+                  <li class="dropdown">
+                      <a href="#" class="no-link">Blog</a>
+                      <div class="dropdown-content">
+                          <a href="blog.html">Blog 1</a>
+                          <a href="#">Blog 2</a>
+                          <a href="#">Blog 3</a>
+                      </div>
+                  </li>
+              </li>
+            </div>
+        </ul>
+    </nav>
+</header>
+  <div class="background-animation">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <div class="shape shape4"></div>
+  </div>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <h2>Introducción a los tipos de pruebas
+          de software.</h2>
+        <p>Los tipos de pruebas de software son técnicas que garantizan la calidad del software al verificar que funcione correctamente y cumpla con los requisitos. Entre ellas se encuentran las pruebas unitarias, de integración, de sistema y de aceptación, cada una enfocada en diferentes niveles del desarrollo para asegurar que tanto los componentes individuales como el sistema completo operen sin fallos.</p>
+        <div class="video-container">
+          <button id="play-button-0" class="play-button" onclick="showVideo(0)">Ver video</button>
+          <video id="video0" class="video" controls style="display: none;">
+            <source src="tipos-de-pruebas-de-software_L6ZsFl0l.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress0"></div>
+        </div>
+      </div>
+      <div class="slide">
+        <h2>Casos de Prueba.</h2>
+        <p>Los casos de prueba son escenarios diseñados para verificar el correcto funcionamiento de una aplicación. Describen las condiciones, los pasos a seguir y los resultados esperados para asegurar que el software cumpla con los requisitos establecidos y funcione correctamente en diversas situaciones.</p>
+        <div class="video-container">
+          <button  id="play-button-1" class="play-button" onclick="showVideo(1)">Ver video</button>
+          <video id="video1" class="video" controls>
+            <source src="¿Qué es un caso de prueba_ Aprendé buenas prácticas y diseñalos como un profesional (2).mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress1"></div>
+        </div>
+      </div>
+    
+    
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <script src="scripts.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Estadística</title>
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="stylesheet" href="body.css">
+
+</head>
+<body>
+
+  <header>
+    <nav>
+        <ul>
+            <li class="left"><a href="index.html">Inicio</a></li>
+            <div class="right">
+                <li class="dropdown">
+                    <a href="#" class="no-link">Portafolio</a>
+                    <div class="dropdown-content">
+                        <a href="https://drive.google.com/drive/folders/10iyerGHqjYZJYAd_Bla1QfB5L-gNTWvH?usp=drive_link">Parcial 1</a>
+                        <a href="https://drive.google.com/drive/folders/1KDtWOE28MTM39Pz6CPiljSII3cva3Rap?usp=sharing">Parcial 2</a>
+                        <a href="#">Parcial 3</a>
+                    </div>
+                </li>
+                <li>
+                    <li class="dropdown">
+                        <a href="#" class="no-link">Blog</a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog 1</a>
+                            <a href="blog2.html">Blog 2</a>
+                            <a href="blog3.html">Blog 3</a>
+                        </div>
+                    </li>
+                </li>
+            </div>
+        </ul>
+    </nav>
+</header>
+  <div class="background-animation">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <div class="shape shape4"></div>
+  </div>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <h2>Conjuntos</h2>
+        Los conjuntos son una de las estructuras fundamentales en matemáticas y nos enseñan a agrupar y clasificar elementos con características comunes. A través de la teoría de conjuntos, aprendemos a manejar conceptos como la unión, intersección, y diferencia, lo que nos permite resolver problemas complejos de manera organizada y lógica.
+        <div class="video-container">
+          <button id="play-button-0" class="play-button" onclick="showVideo(0)">Ver video</button>
+          <video id="video0" class="video" controls style="display: none;">
+            <source src="Qué son conjuntos.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress0"></div>
+        </div>
+      </div>
+      <div class="slide">
+        <h2>Probabilidad Básica</h2>
+        La probabilidad básica es una herramienta esencial que nos permite cuantificar la incertidumbre y predecir la ocurrencia de eventos. Entender las probabilidades nos ayuda a tomar decisiones informadas en situaciones cotidianas y profesionales, evaluando riesgos y beneficios de manera sistemática.
+        <div class="video-container">
+          <button  id="play-button-1" class="play-button" onclick="showVideo(1)">Ver video</button>
+          <video id="video1" class="video" controls>
+            <source src="Conceptos básicos de estadística.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress1"></div>
+        </div>
+      </div>
+      <div class="slide">
+        <h2>Probabilidad Condicional</h2>
+       La probabilidad condicional amplía nuestro entendimiento al considerar eventos dependientes. Este concepto es crucial para desarrollar estrategias en una variedad de campos, desde la estadística hasta la inteligencia artificial, ya que nos permite ajustar nuestras expectativas basadas en información adicional o eventos previos.
+        <div class="video-container">
+          <button  id="play-button-2" class="play-button" onclick="showVideo(2)">Ver video</button>
+          <video id="video2" class="video" controls>
+            <source src="Probabilidad Condicional _ Introducción.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress2"></div>
+        </div>
+      </div>
+      <div class="slide">
+        <h2>Distribuciones Discretas de Probabilidad</h2>
+        Las distribuciones discretas de probabilidad describen la probabilidad de ocurrencia de eventos en un conjunto finito o numerable de resultados. Aprender sobre estas distribuciones, como la binomial o la Poisson, nos ayuda a modelar fenómenos discretos en la vida real, como la cantidad de éxitos en una serie de ensayos o el número de llegadas en un periodo de tiempo.
+        <div class="video-container">
+          <button  id="play-button-3" class="play-button" onclick="showVideo(3)">Ver video</button>
+          <video id="video3" class="video" controls>
+            <source src="Distribuciones Discretas (Binomial, Hipergeometrica, Poisson).mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress3"></div>
+        </div>
+      </div>
+      <div class="slide">
+        <h2>Distribuciones Continuas de Probabilidad</h2>
+        Las distribuciones continuas de probabilidad se aplican a variables que pueden tomar un número infinito de valores dentro de un intervalo. Comprender estas distribuciones, especialmente la normal, es fundamental en áreas como la estadística y la ingeniería, ya que permiten modelar fenómenos naturales y sociales con precisión.
+        <div class="video-container">
+          <button  id="play-button-3" class="play-button" onclick="showVideo(3)">Ver video</button>
+          <video id="video3" class="video" controls>
+            <source src="Variables aleatorias discretas y continuas _ Ejemplos.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress3"></div>
+        </div>
+      </div>
+      <div class="slide">
+        <h2>Distribuciones Muestrales</h2>
+        Las distribuciones muestrales nos enseñan cómo se comportan las estadísticas de una muestra respecto a la población de la que se extrae. Este conocimiento es clave en la inferencia estadística, ya que nos permite hacer estimaciones y probar hipótesis sobre poblaciones completas basándonos en datos muestrales limitados.
+        <div class="video-container">
+          <button  id="play-button-3" class="play-button" onclick="showVideo(3)">Ver video</button>
+          <video id="video3" class="video" controls>
+            <source src="Medidas de tendencia central y medidas de dispersión.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress3"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <script src="scripts.js"></script>
+ 
+</body>
+</html>
